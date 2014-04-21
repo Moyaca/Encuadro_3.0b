@@ -66,8 +66,7 @@
                 android:textSize="20sp"    
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="1dp"
-                android:text="Obras" 
-            	android:background="@drawable/lucky_button"/>
+                android:text="Obras" />
 
             <Button
                 android:id="@+id/btnVideo"
@@ -75,10 +74,9 @@
                 android:layout_height="wrap_content" 
                 android:layout_weight="1" 
                 android:textSize="20sp"              
-                android:layout_marginLeft="2dp"
+                android:layout_marginLeft="1dp"
                 android:layout_marginRight="1dp"
-                android:text="Video" 
-            	android:background="@drawable/lucky_button"/>
+                android:text="Video" />
 
             <Button
                 android:id="@+id/btnAudio"
@@ -86,10 +84,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1" 
                 android:textSize="20sp"             
-                android:layout_marginLeft="2dp"
+                android:layout_marginLeft="1dp"
                 android:layout_marginRight="2dp"
-                android:text="Audio" 
-            android:background="@drawable/lucky_button"/>
+                android:text="Audio" />
         </LinearLayout>
 
         <Button
@@ -98,12 +95,10 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:layout_marginTop="3dp"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
             android:layout_weight="1"
-            android:text="Rec Img" 
-            android:background="@drawable/lucky_button"/>
+            android:text="Rec Img" />
     </LinearLayout>
 
 

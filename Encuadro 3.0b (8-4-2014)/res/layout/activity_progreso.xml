@@ -12,13 +12,12 @@
         android:gravity="center_vertical|bottom"
         android:text="@string/ultima_pista"
         android:textAppearance="?android:attr/textAppearance"
-        android:textSize="30sp" />
+        android:textSize="22sp" />
     
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_weight="10" >
 
         <LinearLayout
@@ -30,7 +29,6 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
                 android:text="No has descubierto ninguna pista.." />
 
         </LinearLayout>
@@ -43,7 +41,6 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/tiempo"
-        android:textSize="22sp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold" />
 
@@ -52,7 +49,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textSize="22sp"
         android:gravity="center"
         android:text="@string/cant_obras"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -66,20 +62,18 @@
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="fill_parent"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left|center_vertical"
             android:layout_weight="1.00"
-            android:textStyle="bold" 
             android:text="@string/btn_fin_juego" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="fill_parent"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
             android:layout_weight="1.00"
-            android:textStyle="bold" 
             android:text="@string/btn_puntaje" />
 
     </LinearLayout>

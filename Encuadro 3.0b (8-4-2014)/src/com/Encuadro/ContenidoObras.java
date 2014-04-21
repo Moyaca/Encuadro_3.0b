@@ -454,7 +454,7 @@ public class ContenidoObras extends Activity {
 			builder.setMessage("La obra pertenece a un juego, ¿desea participar?");
 		    builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
 		    	public void onClick(DialogInterface dialog, int which) {
-		    		//Toast.makeText(getApplicationContext(), "No desea jugar", Toast.LENGTH_SHORT).show();
+		    		Toast.makeText(getApplicationContext(), "No desea jugar", Toast.LENGTH_SHORT).show();
                   }
             });
 		    builder.setNeutralButton("AYUDA", new DialogInterface.OnClickListener() {

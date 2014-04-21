@@ -1,6 +1,7 @@
 package com.Encuadro;
 
 import java.net.SocketTimeoutException;
+import java.util.concurrent.TimeoutException;
 
 import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
@@ -907,8 +908,7 @@ public class Consumirws {
 	 		envelope.dotNet = true;
 
 	 		try {
-	 			HttpTransportSE androidHttpTransport = new HttpTransportSE(
-	 					URL);
+	 			HttpTransportSE androidHttpTransport = new HttpTransportSE(URL,10000);
 
 	 			// this is the actual part that will call the webservice
 	 			androidHttpTransport.call(SOAP_ACTION, envelope);
@@ -927,8 +927,8 @@ public class Consumirws {
 	 				return "error:=>no se encontrosala=>";
 	 				
 	 			}
-	 		} catch (Exception e) {
-	 			return "error =>" + e.toString();
+	 		}catch (Exception e) {
+	 			return "-1";
 	 		}
 	 		
 	 	}

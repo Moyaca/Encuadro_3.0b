@@ -213,14 +213,18 @@ public class Estadistica extends Activity {
         	if(id>0){
         		editor.putInt("idvisitante", id);
         		editor.commit();
-        		if(!omitir)Toast.makeText(getApplicationContext(), "Datos enviados Correctamente", Toast.LENGTH_SHORT).show();
+        		Intent intent = new Intent(Estadistica.this,MainActivity.class); 					
+    			startActivity(intent);
+    			Estadistica.this.finish();
+        		if(!omitir)
+        			Toast.makeText(getApplicationContext(), "Datos enviados Correctamente", Toast.LENGTH_SHORT).show();
+        		
         	}else{
-        		if(!omitir)Toast.makeText(getApplicationContext(), "Result: " + v, Toast.LENGTH_LONG).show();
+        		
+        			Toast.makeText(getApplicationContext(), "No tenemos respuesta del Servidor", Toast.LENGTH_LONG).show();
         	}
 //        	
-			Intent intent = new Intent(Estadistica.this,MainActivity.class); 					
-			startActivity(intent);
-			Estadistica.this.finish();
+			
 			pDialog.dismiss();
 //        	
         	

@@ -17,13 +17,13 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:requiredForAllUsers="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" 
+        android:screenOrientation="locked">
         <activity
             android:name="com.Encuadro.Loader"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -37,7 +37,6 @@
             android:windowSoftInputMode="stateAlwaysHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
@@ -52,17 +51,11 @@
         </activity>
         <activity
             android:name="com.Encuadro.MenPpal"
-            android:label="@string/title_activity_men_ppal"
-            android:screenOrientation="locked" >
+            android:label="@string/title_activity_men_ppal">
         </activity>
         <activity
             android:name="com.Encuadro.ContenidoSalas"
             android:label="@string/title_activity_contenido_salas"
-            android:screenOrientation="locked" >
-        </activity>
-        <activity
-            android:name="com.Encuadro.ContenidoZonas"
-            android:label="@string/title_activity_contenido_zonas"
             android:screenOrientation="locked" >
         </activity>
         <activity
@@ -114,18 +107,15 @@
         </activity>
         <activity
             android:name="com.Encuadro.Progreso"
-            android:label="@string/title_activity_progreso"
-            android:screenOrientation="locked" >
+            android:label="@string/title_activity_progreso">
         </activity>
         <activity
             android:name="com.Encuadro.Puntajes"
-            android:label="@string/title_activity_puntajes"
-            android:screenOrientation="locked" >
+            android:label="@string/title_activity_puntajes">
         </activity>
         <activity
             android:name="com.Encuadro.CuetionarioFinal"
-            android:label="@string/title_activity_cuetionario_final" 
-            android:screenOrientation="locked" >
+            android:label="@string/title_activity_cuetionario_final" >
         </activity>
     </application>
 

@@ -36,6 +36,8 @@ public class MainActivity extends Activity {
 		prefs = getSharedPreferences("user",Context.MODE_PRIVATE);
 		editor = prefs.edit();
 		
+		
+		
 		buttonMan.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -97,5 +99,17 @@ public class MainActivity extends Activity {
 			   cartelsalida.create();
 			   cartelsalida.show();
 		   }
+	}
+	protected void onPause() {
+        super.onPause();
+        back2=false;
+    }
+	
+	
+	protected void onStart() {
+		super.onStart();
+		if(prefs.getInt("estajugando",0)==1){
+			btnProgreso.setVisibility(View.VISIBLE);
+		}
 	}
 }

@@ -238,6 +238,7 @@ public class ContenidoSalas extends Activity {
         	pDialog.dismiss();
         	if(v.equals("0")){
         		Toast.makeText(getApplicationContext(),"Obra no encontrada, intentelo de nuevo", Toast.LENGTH_LONG).show();
+        		pDialog.dismiss();
         	}else{
 	        	Intent intent = new Intent(ContenidoSalas.this,ContenidoObras.class);
 	        	intent.putExtra("result", v);
@@ -323,7 +324,7 @@ public class ContenidoSalas extends Activity {
         protected void onPostExecute(String v) {
         	pDialog.dismiss();
         	System.out.print(" resultado :"+v);
-        	Toast.makeText(ContenidoSalas.this, "Result:" + v,Toast.LENGTH_LONG).show();
+        	Toast.makeText(ContenidoSalas.this, v,Toast.LENGTH_LONG).show();
         }
 }
 	
@@ -400,5 +401,7 @@ public class ContenidoSalas extends Activity {
     	 
     	return resizedBitmap;
     	 
-    	}
+    }
+    
+    
 }

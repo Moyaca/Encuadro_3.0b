@@ -42,10 +42,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/lucky_button"
             android:text="@string/manual"
-            android:textSize="20sp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/btnEscS"
@@ -53,10 +54,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/lucky_button"
             android:text="@string/qr"
-            android:textSize="20sp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button1"
@@ -64,23 +66,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:text="Progreso del Juego"
+            android:visibility="gone"
             android:background="@drawable/lucky_button"
-            android:textSize="20sp"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginTop="7dp"
-            android:text="Rec Img"
-            android:background="@drawable/lucky_button"
-            android:textSize="20sp"
-            android:visibility="gone" />
+            android:textSize="30sp"/>
     </LinearLayout>
 
 </LinearLayout>

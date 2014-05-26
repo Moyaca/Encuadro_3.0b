@@ -76,7 +76,7 @@ public class ContenidoObras extends Activity {
 		
     	idObra = separated[0];
     	nombre = separated[1];
-    	tv1.setText("Nombre: " + separated[1]);
+    	tv1.setText(separated[1]);
 		tv2.setText("Autor: " + separated[6]);
 		tv3.setText("Descripcion Obra: \n" + separated[2]);
 		btnPlay.setText("Play");
@@ -409,7 +409,7 @@ public class ContenidoObras extends Activity {
         	editor.commit();
 			AlertDialog.Builder builder = new AlertDialog.Builder(ContenidoObras.this);
 			builder.setTitle("Pista");
-			builder.setMessage("Obra: "+ separated[0]+" - Pista:"+ separated[1]);
+			builder.setMessage("Pista: "+ separated[1]);
 			builder.setPositiveButton("OK",null);
 			builder.create();
 			builder.show();
@@ -501,7 +501,7 @@ public void Mensaje_Fin(){
 
         final EditText input = (EditText) textEntryView.findViewById(R.id.editText1);
 
-        alert.setPositiveButton("Sumit", new DialogInterface.OnClickListener() { 
+        alert.setPositiveButton("Submit", new DialogInterface.OnClickListener() { 
         public void onClick(DialogInterface dialog, int whichButton) { 
         	
     		String nick_name =input.getText().toString();

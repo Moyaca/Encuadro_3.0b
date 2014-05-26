@@ -14,7 +14,7 @@
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
 	        android:text="Museo\nCasa del Espíritu"
-	        android:textSize="40sp"
+	        android:textSize="90sp"
 	        android:textStyle="bold"
 	        android:textColor="#169aff"
 	        android:layout_marginTop="15dp"
@@ -44,7 +44,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
             android:text="@string/manual"
-            android:textSize="30sp" 
+            android:textSize="80sp" 
             android:background="@drawable/lucky_button"/>
 
         <Button
@@ -55,7 +55,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
             android:text="@string/qr"
-            android:textSize="30sp" 
+            android:textSize="80sp" 
             android:background="@drawable/lucky_button"/>
 
         <Button
@@ -66,7 +66,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="35dp"
             android:text="Progreso del Juego"
-            android:textSize="30sp"
+            android:textSize="80sp"
             android:visibility="gone"
             android:background="@drawable/lucky_button"/>
 	</LinearLayout>

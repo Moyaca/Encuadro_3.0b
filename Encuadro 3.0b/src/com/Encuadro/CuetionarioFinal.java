@@ -221,9 +221,9 @@ public class CuetionarioFinal extends Activity {
 				Toast.makeText(getApplicationContext(), "Visitante imprevisto, no se puede reguistrar el cuestionario", Toast.LENGTH_SHORT).show();
 				CuetionarioFinal.this.finish();
 			}else if(result=="-1"){
-				Toast.makeText(getApplicationContext(), "Uvo un problema con el servidor lo sentimos", Toast.LENGTH_SHORT).show();
+				Toast.makeText(getApplicationContext(), "Hubo un problema con el servidor lo sentimos", Toast.LENGTH_SHORT).show();
 				CuetionarioFinal.this.finish();
-			}else if(result=="0"){
+			}else if(result=="0" || result=="" || result.length()<=1){
 				Toast.makeText(getApplicationContext(), "No hemos encontrado ningun cuestionario", Toast.LENGTH_SHORT).show();
 				CuetionarioFinal.this.finish();
 			}
@@ -262,7 +262,7 @@ public class CuetionarioFinal extends Activity {
 					id_pregunta_ini=id_pregunta;
 				}
 			} catch (Exception e) {
-				Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT).show();
+				Toast.makeText(getApplicationContext(), e.toString() + " " + result, Toast.LENGTH_SHORT).show();
 			}
 			
 			for (Pregunta pre : p) {
@@ -311,7 +311,7 @@ public class CuetionarioFinal extends Activity {
 			}else if(res=="0"){
 				Toast.makeText(getApplicationContext(), "No hemos encontrado ningun cuestionario", Toast.LENGTH_SHORT).show();
 			}else{
-				Toast.makeText(getApplicationContext(), "Enorabuena! Gracias por su ayuda", Toast.LENGTH_SHORT).show();				
+				Toast.makeText(getApplicationContext(), "Enhorabuena! Gracias por su ayuda", Toast.LENGTH_SHORT).show();				
 			}
 //			Toast.makeText(getApplicationContext(), "Realizo? " + prefs.getInt("realizo_cues", 0), Toast.LENGTH_SHORT).show();	
 			CuetionarioFinal.this.finish();

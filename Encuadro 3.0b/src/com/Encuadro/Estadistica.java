@@ -218,11 +218,11 @@ public class Estadistica extends Activity {
     			Estadistica.this.finish();
         		if(!omitir)
         			Toast.makeText(getApplicationContext(), "Datos enviados Correctamente", Toast.LENGTH_SHORT).show();
-        		
-        	}else{
-        		
+        		}else if(id==-2){
         			Toast.makeText(getApplicationContext(), "No tenemos respuesta del Servidor", Toast.LENGTH_LONG).show();
-        	}
+        		}else{
+        			Toast.makeText(getApplicationContext(), "Error interno del server " + v, Toast.LENGTH_LONG).show();
+                	}
 //        	
 			
 			pDialog.dismiss();

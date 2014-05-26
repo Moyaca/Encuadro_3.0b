@@ -191,7 +191,7 @@ public class Progreso extends Activity{
 
         final EditText input = (EditText) textEntryView.findViewById(R.id.editText1);
 
-        alert.setPositiveButton("Sumit", new DialogInterface.OnClickListener() { 
+        alert.setPositiveButton("Submit", new DialogInterface.OnClickListener() { 
         public void onClick(DialogInterface dialog, int whichButton) { 
         	
     		nick_name =input.getText().toString();

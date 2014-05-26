@@ -928,7 +928,7 @@ public class Consumirws {
 	 				
 	 			}
 	 		}catch (Exception e) {
-	 			return "-1";
+	 			return "-2";
 	 		}
 	 		
 	 	}

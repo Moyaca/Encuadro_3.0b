@@ -318,7 +318,7 @@ public class ContenidoSalas extends Activity {
 			    		}
 		    		}
 		    		else{
-		    			
+		    			result = "Sala sin audio ";
 		    		}
 		    	}
 			}catch(NullPointerException n){
@@ -332,7 +332,7 @@ public class ContenidoSalas extends Activity {
         protected void onPostExecute(String v) {
         	pDialog.dismiss();
         	System.out.print(" resultado :"+v);
-//        	Toast.makeText(ContenidoSalas.this, v,Toast.LENGTH_LONG).show();
+        	Toast.makeText(ContenidoSalas.this, v,Toast.LENGTH_LONG).show();
         }
 }
 	

@@ -70,7 +70,7 @@ public class CuetionarioFinal extends Activity {
 						falta_algo = true;
 				}
 				if(falta_algo)
-					Toast.makeText(getApplicationContext(), "falsta algo", Toast.LENGTH_SHORT).show();
+					Toast.makeText(getApplicationContext(), "Algo falta", Toast.LENGTH_SHORT).show();
 				else{
 //					Toast.makeText(getApplicationContext(), ConcatenarDatos(), Toast.LENGTH_SHORT).show();
 					EnviarDatos ed = new EnviarDatos();
@@ -157,7 +157,7 @@ public class CuetionarioFinal extends Activity {
 	 		    			Multiple_Opcion aux = (Multiple_Opcion)res;
 	 		    			pregunta.refreshRes();
 	 		    			aux.setSelected(true);
-	 		    			Toast.makeText(getApplicationContext(), "id: " + i + " - " + aux.getSelected(), Toast.LENGTH_SHORT).show();
+//	 		    			Toast.makeText(getApplicationContext(), "id: " + i + " - " + aux.getSelected(), Toast.LENGTH_SHORT).show();
 	 		    			break outerloop;
 	 		    		}
 	 		    	}

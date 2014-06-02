@@ -34,6 +34,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
+        android:gravity="center"
         android:orientation="vertical" >
 
         <Button
@@ -42,7 +43,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/lucky_button"
             android:text="@string/manual"
@@ -67,7 +67,6 @@
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
             android:text="Progreso del Juego"
             android:visibility="gone"
             android:background="@drawable/lucky_button"

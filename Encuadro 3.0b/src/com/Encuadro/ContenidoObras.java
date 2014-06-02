@@ -79,7 +79,7 @@ public class ContenidoObras extends Activity {
     	tv1.setText(separated[1]);
 		tv2.setText("Autor: " + separated[6]);
 		tv3.setText("Descripcion Obra: \n" + separated[2]);
-		btnPlay.setText("Play");
+		btnPlay.setText("Audio");
 		
 		//EJECUTA EL OBRAPERTENECEAJUEGO CON EL idObra
     	if(idjuego>0 && jugando==1 ){
@@ -135,12 +135,12 @@ public class ContenidoObras extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				if(btnPlay.getText().toString()=="Play"){
+				if(btnPlay.getText().toString()=="Audio"){
 					FtpAudio ftpaudio = new FtpAudio();
 					ftpaudio.execute(idObra,nombre);				
 					btnPlay.setText("Stop");
 				}else{
-					btnPlay.setText("Play");
+					btnPlay.setText("Audio");
 					detener(v);
 				}
 			}
@@ -240,7 +240,7 @@ public class ContenidoObras extends Activity {
 									            mp.release();
 									            mp = null;
 									            posicion = 0;
-									            btnPlay.setText("Play");
+									            btnPlay.setText("Audio");
 									        }
 										}
 				    	            });
@@ -269,7 +269,7 @@ public class ContenidoObras extends Activity {
  
         @Override
         protected void onPostExecute(String respuesta) {
-        	if(respuesta=="Obra sin audio ") btnPlay.setText("Play");
+        	if(respuesta=="Obra sin audio ") btnPlay.setText("Audio");
         	Toast.makeText(getApplicationContext(), respuesta, Toast.LENGTH_LONG).show();
         	pDialog.dismiss();	
         }

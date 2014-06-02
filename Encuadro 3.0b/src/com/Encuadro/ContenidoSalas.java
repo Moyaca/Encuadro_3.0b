@@ -75,7 +75,7 @@ public class ContenidoSalas extends Activity {
 		tv1.setText("Nombre: \n" + separated[1]);
 		tv2.setText("Descripción: \n" + separated[2]);
 		
-		btnPlay.setText("Play");
+		btnPlay.setText("Audio");
 		
 		FtpExecute ftp = new FtpExecute();
   	    String[] sala = {idsala,separated[(separated.length-1)]};	
@@ -106,12 +106,12 @@ public class ContenidoSalas extends Activity {
 		btnPlay.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if(btnPlay.getText().toString()=="Play"){
+				if(btnPlay.getText().toString()=="Audio"){
 					FtpAudio ftpaudio = new FtpAudio();
 					ftpaudio.execute(idsala,nombre);				
 					btnPlay.setText("Stop");
 				}else{
-					btnPlay.setText("Play");
+					btnPlay.setText("Audio");
 					detener(v);
 				}
 			}
@@ -280,7 +280,6 @@ public class ContenidoSalas extends Activity {
 		    		String separatedaux[] = result.split("=>");
 		    		String separatedaudio[] = separatedaux[0].split("/");
 		    		audio = separatedaudio[separatedaudio.length-1];
-		    		result = "Audio : " + audio + " ID: " + idSala;
 		    		
 		    		if(audio!=null){
 			    		if(ftp.getAudioSala(idSala, audio, true, 0)){
@@ -302,7 +301,7 @@ public class ContenidoSalas extends Activity {
 									            mp.release();
 									            mp = null;
 									            posicion = 0;
-									            btnPlay.setText("Play");
+									            btnPlay.setText("Audio");
 									        }
 										}
 				    	            });
@@ -322,16 +321,16 @@ public class ContenidoSalas extends Activity {
 		    		}
 		    	}
 			}catch(NullPointerException n){
-				result = "Sala sin audio "+ result;
+				result = "Sala sin audio ";
 			}catch (Exception e) {
-				result = "Sala sin audio "+ result;
+				result = "Sala sin audio ";
 			}
         	return result;
         }
         @Override
         protected void onPostExecute(String v) {
         	pDialog.dismiss();
-        	System.out.print(" resultado :"+v);
+        	if(v=="Obra sin audio ") btnPlay.setText("Audio");
         	Toast.makeText(ContenidoSalas.this, v,Toast.LENGTH_LONG).show();
         }
 }

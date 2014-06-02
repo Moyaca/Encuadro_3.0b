@@ -49,16 +49,16 @@ public class MenPpalAuto extends Activity {
 			
 					String contenido = intent.getStringExtra("SCAN_RESULT");
 				   
-					Toast toast1 =Toast.makeText(getApplicationContext(),"Código: "+contenido, Toast.LENGTH_SHORT);
-					toast1.show();
+//					Toast toast1 =Toast.makeText(getApplicationContext(),"Código: "+contenido, Toast.LENGTH_SHORT);
+//					toast1.show();
 					
 					QRExecuteObra qr = new QRExecuteObra();
 					qr.execute(contenido);
 			}else if (requestCode == 1) {
 					String contenido = intent.getStringExtra("SCAN_RESULT");
 				   
-					Toast toast1 = Toast.makeText(getApplicationContext(), "Código: "+contenido, Toast.LENGTH_SHORT);
-					toast1.show();
+//					Toast toast1 = Toast.makeText(getApplicationContext(), "Código: "+contenido, Toast.LENGTH_SHORT);
+//					toast1.show();
 					
 					QRExecuteSala qr = new QRExecuteSala();
 					qr.execute(contenido);

@@ -22,7 +22,7 @@
 	        
 	    <View
 	        android:layout_width="fill_parent"
-	        android:layout_height="2dp"
+	        android:layout_height="3dp"
 	        android:layout_marginTop="5dp"
 	        android:layout_marginLeft="30dp"
 	        android:layout_marginRight="30dp"
@@ -34,15 +34,16 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+        android:gravity="center">
 
         <Button
             android:id="@+id/btnEscO"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
             android:text="@string/manual"
             android:textSize="80sp" 
             android:background="@drawable/lucky_button"/>
@@ -51,9 +52,10 @@
             android:id="@+id/btnEscS"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
             android:text="@string/qr"
             android:textSize="80sp" 
             android:background="@drawable/lucky_button"/>
@@ -62,9 +64,9 @@
             android:id="@+id/button1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
             android:text="Progreso del Juego"
             android:textSize="80sp"
             android:visibility="gone"
